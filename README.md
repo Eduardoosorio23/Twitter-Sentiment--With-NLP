@@ -33,7 +33,9 @@ I ran a basic Random Forest model to see a preview of the important features. Th
 
 ## Basemodel:
 For this step I tokenized the data and lemmatized to reduce dimensionality. I ran both Random Forest and Naive Bayes models to see which one would be more accurate. They both did almost the same with an average testing accuracy of 65.5%.
+
 ![alt text](https://raw.githubusercontent.com/Eduardoosorio23/Mod_4_Project/main/Data/Pictures/Prelim%20RF%20Accuracy.png?token=APSW5OCGAKG3GCCAYQPPUDDAI62BM)
+
 
 ![alt text](https://raw.githubusercontent.com/Eduardoosorio23/Mod_4_Project/main/Data/Pictures/Prelim%20NB%20Accuracy.png?token=APSW5OBROL7WS6VRCSXYXGTAI62D6)
 
@@ -41,8 +43,11 @@ For this step I tokenized the data and lemmatized to reduce dimensionality. I ra
 For the final model I cut everything that was't classified as positive or negative. This cut the dataset by about 60% but increased the model accuracy over all. I also used TF-IDf to vectorize the tokenized tweets to assign weight to the more important features. This helped increase the average accuracy for both Random Forest and Naive Bayes by about 20%.
 
 ![alt text](https://raw.githubusercontent.com/Eduardoosorio23/Mod_4_Project/main/Data/Pictures/Final%20RF%20Accuracy.png?token=APSW5OCZPHCVZ6UYLC4PELDAI62HS)
+
 ![alt text](https://raw.githubusercontent.com/Eduardoosorio23/Mod_4_Project/main/Data/Pictures/Confusion%20matrix%20RF.png?token=APSW5OGUFNGR5ELYYFL3ARTAI62QG)
+
 ![alt text](https://raw.githubusercontent.com/Eduardoosorio23/Mod_4_Project/main/Data/Pictures/Final%20NB%20Accuracy.png?token=APSW5OA2UUKNS6QK2DAQQJDAI62KC)
+
 ![alt text](https://raw.githubusercontent.com/Eduardoosorio23/Mod_4_Project/main/Data/Pictures/Confusion%20matrix%20NB.png?token=APSW5ODRGBF5HJI3NFOWJFDAI62SW)
 
 ## Post EDA:
@@ -62,11 +67,16 @@ Out of the top ten most negative words:
 
 Stand out the most since they're not in the top ten most common positive words.
 
-![alt text](https://raw.githubusercontent.com/Eduardoosorio23/Mod_4_Project/main/Data/Pictures/Most%20pos%20sentiments.png?token=APSW5OHNEYMCH736PZRQ2HTAI63US)![alt text](https://raw.githubusercontent.com/Eduardoosorio23/Mod_4_Project/main/Data/Pictures/Most%20neg%20sentiments.png?token=APSW5OEPXCMEEG42Q3EYBY3AI63V2)
+![alt text](https://raw.githubusercontent.com/Eduardoosorio23/Mod_4_Project/main/Data/Pictures/Most%20pos%20sentiments.png?token=APSW5OHNEYMCH736PZRQ2HTAI63US)
+
+![alt text](https://raw.githubusercontent.com/Eduardoosorio23/Mod_4_Project/main/Data/Pictures/Most%20neg%20sentiments.png?token=APSW5OEPXCMEEG42Q3EYBY3AI63V2)
 
 Here is an example of a tweet the model thought was positive:
+
 ![alt text](https://raw.githubusercontent.com/Eduardoosorio23/Mod_4_Project/main/Data/Pictures/Pos%20Tweet%20example.png?token=APSW5OAU5PEBACIACEQQVLDAI6356)
+
 Here is an example of a tweet the model though was negative:
+
 ![alt text](https://raw.githubusercontent.com/Eduardoosorio23/Mod_4_Project/main/Data/Pictures/Neg%20Tweet%20example.png?token=APSW5ODRZTREQGY3HDPFDQ3AI637G)
 
 ## Recommendations:
