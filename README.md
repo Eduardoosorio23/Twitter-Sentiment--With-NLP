@@ -40,7 +40,7 @@ For this step I tokenized the data and lemmatized to reduce dimensionality. I ra
 ![alt text](https://raw.githubusercontent.com/Eduardoosorio23/Mod_4_Project/main/Data/Pictures/Prelim%20NB%20Accuracy.png?token=APSW5OBROL7WS6VRCSXYXGTAI62D6)
 
 ## Final Model:
-For the final model I cut everything that was't classified as positive or negative. This cut the dataset by about 60% but increased the model accuracy over all. I also used TF-IDf to vectorize the tokenized tweets to assign weight to the more important features. This helped increase the average accuracy for both Random Forest and Naive Bayes by about 20%.
+For the final model I cut everything that was't classified as positive or negative. This cut the dataset by about 60% but increased the model accuracy over all. I also used TF-IDf to vectorize the tokenized tweets and assign weight to the more important features. This helped increase the average accuracy for both Random Forest and Naive Bayes by about 20%.
 
 ![alt text](https://raw.githubusercontent.com/Eduardoosorio23/Mod_4_Project/main/Data/Pictures/Final%20RF%20Accuracy.png?token=APSW5OCZPHCVZ6UYLC4PELDAI62HS)
 
